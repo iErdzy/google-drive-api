@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1><span class="span1">Google</span> <span class="span2">Drive</span> <span class="span3">Explorer</span></h1>
+            
+            <div class="controls-container">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search files...">
+                    <button id="searchBtn">Search</button>
+                </div>
+
+                <section class="upload-section">
+                    <input type="file" id="fileInput">
+                    <button id="uploadBtn">Upload</button>
+                </section>
+            </div>
+        </header>
+
+        <main>
+            <div id="loader" class="hidden">Processing...</div>
+            <div id="errorBox" class="hidden"></div>
+            <div id="resultsGrid"></div>
+        </main>
+
+        <footer>
+            <p>Data provided by <a href="https://developers.google.com/workspace/drive" target="_blank">Google Drive API</a></p>
+        </footer>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
